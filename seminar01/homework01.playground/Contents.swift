@@ -35,7 +35,7 @@ for i in 10...50 {
             k += 2
             //print("i: \(i), k: \(k)")
         } else {
-            print("Next ")
+            print("Next")
         }
     }
 }
@@ -52,7 +52,7 @@ for i in 10...50 {
             k += 1
             //print("i: \(i), k: \(k)")
         } else {
-            print("Next ")
+            print("Next")
             break
         }
     }
