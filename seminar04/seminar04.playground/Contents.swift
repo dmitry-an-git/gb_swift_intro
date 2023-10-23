@@ -26,7 +26,7 @@ struct TeaPrice {
         case black, fruit, green
     }
     
-    var type: TeaPrice.TeaType
+    var type: TeaType
     
     private var price: Double
     
