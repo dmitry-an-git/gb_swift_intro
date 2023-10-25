@@ -177,3 +177,4 @@ extension VendingMachine: testProtocol {
         print("Vending machine if OFF")
     }
 }
+
