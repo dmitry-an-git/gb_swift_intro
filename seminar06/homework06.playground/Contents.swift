@@ -26,7 +26,9 @@ struct Employee {
 class Pizzeria {
 
     var employees: [Employee]
-    var tables: [Table]
+    var tables: [Table] 
+    // basically it should be weak, but we cant have an array of weak references in swift,
+    // so we will have weak pizzeria in Table instead
     
     init(employees: [Employee], seats: Int...) {
         self.employees = employees
@@ -53,7 +55,7 @@ class Pizzeria {
 class Table {
     
     var capacity: Int
-    var pizzeria: Pizzeria
+    weak var pizzeria: Pizzeria?
     
     init(capacity: Int, pizzeria: Pizzeria) {
         self.capacity = capacity
